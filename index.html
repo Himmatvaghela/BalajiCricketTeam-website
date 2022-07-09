@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balaji Team</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 8vh;
+            margin: 0vw 8vw;
+            background-color: #096e2dde;
+            color: white;
+            position: sticky;
+            top: 0px;
+            font-weight: bold;
+            font-size: 3vh;
+            z-index: 1;
+        }
+
+        .navbar img {
+            width: 6rem;
+            height: 6rem;
+
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        a:hover {
+            color: white;
+            background-color: indianred;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        .navbar ul {
+            height: 8vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            list-style: none;
+            flex-wrap: wrap;
+
+        }
+
+        .navbar ul li {
+            padding: 0 1rem;
+        }
+
+        .Team {
+            background-color: black;
+            margin: 0vw 8vw;
+            height: 10vw;
+            font-size: 3vw;
+        }
+
+        .Team ol {
+            padding-left: 0px;
+            display: inline-flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .Team ol li {
+            width: 16vw;
+            height: 100%;
+            background: url(cricket.jpg);
+            background-color: black;
+            color: blue;
+            list-style: none;
+            cursor: pointer;
+        }
+
+        h1 {
+            margin: 0vw 8vw;
+            padding: 0px;
+            background: url(bat.jpg);
+            color: rgb(237 243 183 / 72%);
+            border: 0.5vh solid red;
+            font-size: 15vw;
+            text-align: center;
+            text-shadow: 2px 2px black;
+        }
+
+        h2 {
+            margin: 0vw 8vw;
+            background-color: black;
+            color: red;
+            border: 0.5vh solid red;
+            text-align: center;
+            font-size: 7vw;
+        }
+
+        .image {
+            margin: 0vw 8vw;
+            height: 50vw;
+            background-color: red;
+            display: flex;
+        }
+
+
+        .image #img1 {
+            width: 100%;
+            height: 100%;
+        }
+
+        .Team img {
+            display: inline-block;
+            width: 100%;
+            height: 89%;
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar {
+                font-size: 3vw;
+            }
+            .Team{
+                height: 15vw;
+            }
+        }
+
+        /* css for slider************************ */
+        .slide-container {
+            width: 83vw;
+            height: 57vw;
+            margin: auto;
+            border: 2px solid red;
+            position: relative;
+        }
+
+        .slide {
+            display: none;
+        }
+
+        .slide img {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .caption {
+            margin: 0;
+            width: 100%;
+            height: 10%;
+            position: absolute;
+            font-size: 5vw;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.4);
+            color: white;
+            text-align: center;
+            bottom: 0;
+        }
+
+        .arrow {
+            position: absolute;
+            color: black;
+            background-color: white;
+            padding: 3px;
+            border-radius: 50%;
+            top: 50%;
+            font-size: 4vw;
+            width: 4vw;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 5px;
+        }
+
+        .next {
+            right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Balaji Team</h1>
+    <header>
+        <div class="navbar">
+            <img src="logo.jpg" alt="notavailable">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Battingattack.html">Batting order</a></li>
+                <li><a href="Bowling.html">Bowling Attack</a></li>
+                <li><a href="form.html">form</a></li>
+                <li><a href="image.html">Images</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="image">
+        <img id="img1" src="playershort.jpg" alt="not available">
+        <!-- <img id="img2" src="team image.jpg" alt="Not available"> -->
+    </div>
+    <h2>Team line up</h2>
+    <div class="Team">
+        <ol type="I">
+            <li><button onclick="ajay(0)"> Himmat</button></li>
+            <li><button onclick="ajay(1)">Jagdish</button> </li>
+            <li><button onclick="ajay(2)">Ajay</button></li>
+            <li><button onclick="ajay(3)">Suraj</button></li>
+            <li><button onclick="ajay(4)">Gappi</button></li>
+            <li><button onclick="ajay(5)">pappu</button>></li>
+            <li><button onclick="ajay(6)">Dholi</button></li>
+            <li><button onclick="ajay(7)">Kailash</button></li>
+            <li><button onclick="ajay(8)">pardeep</button></li>
+            <li><button onclick="ajay(9)">Mukesh</button></li>
+            <li><button onclick="ajay()">spot left</button></li>
+           
+    </div>
+    <div class="slide-container">
+        <div class="slide">
+            <img src="viratimg2.jpg" alt="">
+            <div class="caption">Himmat</div>
+        </div>
+
+        <div class="slide">
+            <img src="rohitimg2.jpg" alt="">
+            <div class="caption">Jagdish</div>
+        </div>
+
+        <div class="slide">
+            <img src="rahulimg2.jpg" alt="">
+            <div class="caption">Ajay</div>
+        </div>
+
+        <div class="slide">
+            <img src="dhoniimg2.jpg" alt="">
+            <div class="caption">Suraj</div>
+        </div>
+
+        <div class="slide">
+            <img src="hardikimg2.jpg" alt="">
+            <div class="caption">Gappi</div>
+        </div>
+
+        <div class="slide">
+            <img src="jadejaimg2.jpg" alt="">
+            <div class="caption">pappu</div>
+        </div>
+
+        <div class="slide">
+            <img src="shamiimg2.jpg" alt="">
+            <div class="caption">Dholi</div>
+        </div>
+
+        <div class="slide">
+            <img src="chahlimg.jpg" alt="">
+            <div class="caption">kailash</div>
+        </div>
+
+        <div class="slide">
+            <img src="bhuvneswerimg2.jpg" alt="">
+            <div class="caption">pardeep</div>
+        </div>
+
+        <div class="slide">
+            <img src="bumrahimg2.jpg" alt="">
+            <div class="caption">Mukesh</div>
+        </div>
+
+        <span class="arrow prev" onclick="Controller(-1)">&#10094;</span>
+        <span class="arrow next" onclick="Controller(1)">&#10095;</span>
+    </div>
+    <script>
+        
+        flag=0;
+        
+        function Controller(x) {
+            flag=flag+x;
+           slideshow(flag)
+       }
+       function ajay(y) {
+          flag=y;
+          slideshow(flag)
+       }
+       
+       function slideshow(num) {
+           var slides=document.querySelectorAll(".slide");
+
+           if (num==slides.length) {
+               num=0;
+               flag=0;
+            }else if(num<0){
+               num=slides.length-1
+               flag=slides.length-1
+            }
+            
+            for (const i of slides) {
+                i.style.display="none"
+            }
+            slides[num].style.display="block";
+        }
+        
+        slideshow(0);
+        
+    </script>
+</body>
+
+</html>
